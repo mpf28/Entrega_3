@@ -1,0 +1,14 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de SASS
+*.map
+.sass-cache/
+
+# Archivos de IDE
+.vscode/
+.idea/
+
+# Archivos de dependencias
+node_modules/ 

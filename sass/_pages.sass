@@ -1,0 +1,66 @@
+// Estilos del header
+header
+  width: 100%
+  margin: 0
+  padding: 0
+  background-color: $color-primary
+  color: $color-white
+  border: 0
+  .nav-link
+    color: $color-white !important
+
+.header-grid
+  @include grid-center
+  grid-template-rows: auto auto
+  gap: $spacing-small
+  padding-bottom: 20px
+
+.header-nav-grid
+  @include grid-center
+  grid-template-columns: 1fr
+  gap: $spacing-small
+  @media (min-width: $breakpoint-lg)
+    grid-template-columns: repeat(5, auto)
+    gap: $spacing-large
+
+// Estilos del footer
+footer
+  width: 100%
+  margin-top: 30px
+  padding: 30px
+  background-color: $color-primary
+  color: $color-white
+  border: 0
+
+.footer-grid
+  @include grid-center
+  grid-template-rows: auto auto auto
+  gap: $spacing-medium
+
+.footer-icons-grid
+  display: grid
+  grid-auto-flow: column
+  gap: $spacing-xl
+  img
+    @include transition(transform)
+    @include hover-transform(1.2)
+
+// Estilos del contenido principal
+main
+  background-color: $color-white
+  margin: 0
+  padding: 0
+  &:not(.no-animation) section
+    animation: fadeIn 1s ease-out
+
+h1, h2
+  color: $color-heading
+  text-align: center
+
+p
+  text-align: center
+
+img
+  max-width: 100%
+  height: auto
+  margin: 10px auto 
