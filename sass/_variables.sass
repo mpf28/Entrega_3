@@ -1,46 +1,36 @@
-// Variables de colores
 $color-primary: #004466
 $color-text: #333
 $color-heading: #222
 $color-white: #ffffff
 $color-link: #007bff
 
-// Variables de espaciado
 $spacing-small: 0.2rem
 $spacing-medium: 0.5rem
 $spacing-large: 1.2rem
 $spacing-xl: 1rem
 
-// Variables de transición
 $transition-speed: 0.3s
 $transition-timing: ease
 
-// Variables de breakpoints
 $breakpoint-lg: 992px
 
-// Mixins
-// Mixin para transiciones
 @mixin transition($property: all)
   transition: $property $transition-speed $transition-timing
 
-// Mixin para flexbox
 @mixin flex-center
   display: flex
   align-items: center
   justify-content: center
 
-// Mixin para grid
 @mixin grid-center
   display: grid
   justify-items: center
   align-items: center
 
-// Mixin para hover con transform
 @mixin hover-transform($scale: 1.02)
   &:hover
     transform: scale($scale)
 
-// Mixin para sombras
 @mixin box-shadow($level: 1)
   @if $level == 1
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)

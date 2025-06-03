@@ -1,11 +1,9 @@
-// Clase base para botones
 %btn-base
   display: inline-block
   margin-left: auto
   margin-right: auto
   @include transition
 
-// Estilos de botones
 button
   &:hover
     background-color: $color-primary
@@ -36,7 +34,6 @@ button
   border-bottom-right-radius: 0
   display: block
 
-// Estilos de navegación
 .nav-link
   position: relative
   @include transition(color)
@@ -52,7 +49,6 @@ button
   &:hover::after
     width: 100%
 
-// Estilos de imágenes
 .img-fluid
   @include transition(transform)
   @include hover-transform 
